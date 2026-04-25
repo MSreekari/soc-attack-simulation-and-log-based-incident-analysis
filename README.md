@@ -10,10 +10,19 @@ This project demonstrates the simulation and analysis of common cyber attack pat
 * Develop SOC-level incident analysis skills
 
 ## Lab Environment
+This lab was designed to isolate the attacker and victim machines while allowing controlled communication over a virtual network. The environment simulates a real-world scenario where an attacker must first perform reconnaissance before launching an exploit.
 
-* **Attacker Machine:** Kali Linux
-* **Target Machine:** Ubuntu
-* **Network Setup:** Virtualized (NAT-based internal network)
+![Architecture Diagram](images/soc-project-1.png)
+
+### Environment Breakdown
+* **Attacker (Kali Linux):**
+    * **Nmap:** Used for initial network discovery and port scanning to confirm that Port 22 (SSH) was open and accessible.
+    * **Hydra:** Utilized for the brute-force attack to test the vulnerability of weak SSH credentials.
+* **Communication Layer:**
+    * **Virtual Network (NAT):** Configured to allow traffic between the host and VMs while maintaining network isolation from the external internet for safety.
+* **Victim (Ubuntu Server):**
+    * **SSH Service:** Acting as the target service.
+    * **Log Monitoring:** The system logs (`/var/log/auth.log`) were actively monitored to capture the brute-force attempt, allowing for analysis of the attack footprint.
 
 ## Simulated Attack Scenarios
 **1. SSH Brute Force Attack -** 
