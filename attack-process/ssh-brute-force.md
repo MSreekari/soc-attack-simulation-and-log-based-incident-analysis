@@ -29,7 +29,7 @@ It is a process that happens in three distinct phases.
 
 ## Attack Methodology 
 
-![SSH-Brute-force](images/soc-project-2.png)
+![SSH-Brute-force](../images/soc-project-2.png)
 
 1. Identified the target IP.
    Using the command - `ip a`
