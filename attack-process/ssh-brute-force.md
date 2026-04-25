@@ -29,6 +29,8 @@ It is a process that happens in three distinct phases.
 
 ## Attack Methodology 
 
+![SSH Brute-force](images/soc-project-2.png)
+
 1. Identified the target IP.
    Using the command - `ip a`
 
@@ -66,8 +68,8 @@ The hydra starts brute forcing by using different usernames and passwords combin
 
 Log file monitored : /var/log/auth.log
 Command used : `grep "sshd" /var/log/auth.log | tail -n 20`
-**Observed patterns :**
 
+**Observed patterns :**
 * Repeated "Failed password" entries.
 * Same source IP address across multiple attempts.
 * Rapid succession of login failures.
@@ -79,6 +81,6 @@ Command used : `grep "sshd" /var/log/auth.log | tail -n 20`
 * **Service Hardening:** Modified `sshd_config` to disallow `root` logins and restricted authentication retries.
 * **Port Hardening:** Relocated the SSH service from the default Port 22 to a non-standard high port to reduce exposure to automated scanning bots.
 
-
+SSH brute force attacks are easily detectable through authentication logs due to their repetitive and high-frequency nature. Effective monitoring and proper access controls significantly reduce the risk of successful exploitation.
 
   
