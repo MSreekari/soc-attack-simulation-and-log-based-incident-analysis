@@ -10,9 +10,10 @@ This project demonstrates the simulation and analysis of common cyber attack pat
 * Develop SOC-level incident analysis skills
 
 ## Lab Environment
-** Attacker Machine:** Kali Linux
-**Target Machine:** Ubuntu
-**Network Setup:** Virtualized (NAT-based internal network)
+
+* **Attacker Machine:** Kali Linux
+* **Target Machine:** Ubuntu
+* **Network Setup:** Virtualized (NAT-based internal network)
 
 ## Simulated Attack Scenarios
 **1. SSH Brute Force Attack -** 
