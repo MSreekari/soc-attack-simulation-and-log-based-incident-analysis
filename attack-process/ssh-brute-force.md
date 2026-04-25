@@ -47,7 +47,7 @@ It is a process that happens in three distinct phases.
    hydra -l user -P /usr/share/wordlists/rockyou.txt ssh://<UBUNTU_IP>
    ```
    
-   *Hydra - Password cracking tool
+   Hydra - Password cracking tool
    
    -l - Specifies the username
    
@@ -57,7 +57,7 @@ It is a process that happens in three distinct phases.
    
    <target-ip> - IP address of the Ubuntu machine
    
-   -t 2 - Limits parallel login attempts this reduces system overload*
+   -t 2 - Limits parallel login attempts this reduces system overload
 
 5. The rockyou.txt was not found. To extract the file, the below commands were executed - 
    1. `ls /usr/share/wordlists/` - First, look at the files.
