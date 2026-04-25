@@ -1,4 +1,4 @@
-# 🔍 Port Scanning Simulation and Log Analysis
+# Port Scanning Simulation and Log Analysis
 
 Port scanning is a reconnaissance technique used by attackers to identify open ports and services running on a target system. Each open port represents a potential entry point into the system.
 
@@ -34,7 +34,7 @@ Port scanning works by sending packets to a target system and analyzing the resp
    Using the command - `ip a`
 
 2. Verified active services on the target system
-   `ss -tuln`
+   `ss -tulnp`
 
 3. From Kali Linux, initiated a port scan using Nmap
 
