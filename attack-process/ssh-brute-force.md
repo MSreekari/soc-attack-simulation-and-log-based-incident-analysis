@@ -48,13 +48,18 @@ It is a process that happens in three distinct phases.
    ```
    
    *Hydra - Password cracking tool
+   
    -l - Specifies the username
+   
    -P - Specifies the password wordlist
+   
    ssh:// - Target protocol (SSH)
+   
    <target-ip> - IP address of the Ubuntu machine
+   
    -t 2 - Limits parallel login attempts this reduces system overload*
 
-6. The rockyou.txt was not found. To extract the file, the below commands were executed - 
+5. The rockyou.txt was not found. To extract the file, the below commands were executed - 
    1. `ls /usr/share/wordlists/` - First, look at the files.
    2. The rockyou.txt.gz file was found.
    3. `sudo gunzip /usr/share/wordlists/rockyou.txt.gz` - This file has to be extracted.
